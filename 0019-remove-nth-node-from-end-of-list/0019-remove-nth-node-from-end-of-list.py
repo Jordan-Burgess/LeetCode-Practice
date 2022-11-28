@@ -30,7 +30,5 @@ class Solution(object):
         else:
             head = head.next
             return head
-        
-        return count_tracker
                 
             
