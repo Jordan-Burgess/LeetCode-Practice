@@ -5,8 +5,13 @@ class Solution(object):
         :type val: int
         :rtype: int
         """
-        for i in range(len(nums)-1, -1, -1):
-            if nums[i] == val:
-                nums.pop(i)
+#         for i in range(len(nums)-1, -1, -1):
+#             if nums[i] == val:
+#                 nums.pop(i)
                 
+#         return len(nums)
+    
+        while val in nums:
+            nums.remove(val)
+            
         return len(nums)
